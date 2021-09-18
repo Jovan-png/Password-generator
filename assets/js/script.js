@@ -15,33 +15,33 @@ var passwordLength ="";
 var gPassword ="";
 var finalPassword =""
     var passwordText = document.querySelector("#password");
-    var uCasePrompt = window.prompt("Would you like the passowrd to contain UPPERCASE? Type y for 'yes' and n for 'No'");
-    if (uCasePrompt === "y" || uCasePrompt === "Y") {
+    var uCasePrompt = window.prompt("Would you like the password to contain UPPERCASE? Type 'yes' or 'no'");
+    if (uCasePrompt === "yes" || uCasePrompt === "YES") {
         gPassword = gPassword + uCase;
        
     } else {
         gPassword = gPassword;
     }
-    var lCasePrompt = window.prompt("Would you like the passowrd to contain LOWERCASE? Type y for 'yes' and n for 'No'");
-    if (lCasePrompt === "y" || lCasePrompt === "Y") {
+    var lCasePrompt = window.prompt("Would you like the password to contain LOWERCASE? Type 'yes' or 'no'.");
+    if (lCasePrompt === "yes" || lCasePrompt === "YES") {
         gPassword = gPassword + lCase;
        
     } else {
         gPassword = gPassword
     }
-    var sCasePrompt = window.prompt("Would you like the passowrd to contain SPECIAL CHARACTERS? Type y for 'yes' and n for 'No'");
-    if (sCasePrompt === "y" || sCasePrompt === "Y") {
+    var sCasePrompt = window.prompt("Would you like the password to contain SPECIAL CHARACTERS? Type 'yes' or 'no'.");
+    if (sCasePrompt === "yes" || sCasePrompt === "YES") {
         gPassword = gPassword + specialChar;
     } else {
         gPassword = gPassword;
     }
-    var numbersPrompt = window.prompt("Would you like the passowrd to contain NUMBERS? Type y for 'yes' and n for 'No'");
-    if (numbersPrompt === "y" || numbersPrompt === "Y") {
+    var numbersPrompt = window.prompt("Would you like the password to contain NUMBERS? Type y for 'yes' and n for 'No'");
+    if (numbersPrompt === "yes" || numbersPrompt === "YES") {
         gPassword = gPassword + pNumbers;
     } else {
         gPassword = gPassword;
     }
-    var lengthPrompt = window.prompt("How long would you like the password? Please enter a number length. Preferably 8 or more!");
+    var lengthPrompt = window.prompt("How long would you like the password? Please enter a number length. 8 or more!");
     if (lengthPrompt >= 8) {
         passwordLength = lengthPrompt
     } else {
@@ -51,13 +51,15 @@ var finalPassword =""
         var randomnum = Math.floor(Math.random()*gPassword.length);
         finalPassword += gPassword.substring(randomnum,randomnum+1);
         }
-       document.getElementById("password").value = finalPassword ;
-       window.alert("Enjoy Your New Password!")
+       document.getElementById("password").value = finalPassword;
 };
 
 
 
 
+
+//Second fuction if user selects a lower number than 8.
+var generateBtn = document.querySelector("#generate");
 
 var numberMis = function(){
     var sCasePrompt;
@@ -69,34 +71,33 @@ var passwordLength ="";
 var gPassword ="";
 var finalPassword =""
     var passwordText = document.querySelector("#password");
-    window.alert("Whoops looks like that number is too low try picking a bigger number!")
-    var uCasePrompt = window.prompt("Would you like the passowrd to contain UPPERCASE? Type y for 'yes' and n for 'No'");
-    if (uCasePrompt === "y" || uCasePrompt === "Y") {
+    var uCasePrompt = window.prompt("Would you like the password to contain UPPERCASE? Type 'yes' or 'no'");
+    if (uCasePrompt === "yes" || uCasePrompt === "YES") {
         gPassword = gPassword + uCase;
        
     } else {
         gPassword = gPassword;
     }
-    var lCasePrompt = window.prompt("Would you like the passowrd to contain LOWERCASE? Type y for 'yes' and n for 'No'");
-    if (lCasePrompt === "y" || lCasePrompt === "Y") {
+    var lCasePrompt = window.prompt("Would you like the password to contain LOWERCASE? Type 'yes' or 'no'.");
+    if (lCasePrompt === "yes" || lCasePrompt === "YES") {
         gPassword = gPassword + lCase;
        
     } else {
         gPassword = gPassword
     }
-    var sCasePrompt = window.prompt("Would you like the passowrd to contain SPECIAL CHARACTERS? Type y for 'yes' and n for 'No'");
-    if (sCasePrompt === "y" || sCasePrompt === "Y") {
+    var sCasePrompt = window.prompt("Would you like the password to contain SPECIAL CHARACTERS? Type 'yes' or 'no'.");
+    if (sCasePrompt === "yes" || sCasePrompt === "YES") {
         gPassword = gPassword + specialChar;
     } else {
         gPassword = gPassword;
     }
-    var numbersPrompt = window.prompt("Would you like the passowrd to contain NUMBERS? Type y for 'yes' and n for 'No'");
-    if (numbersPrompt === "y" || numbersPrompt === "Y") {
+    var numbersPrompt = window.prompt("Would you like the password to contain NUMBERS? Type y for 'yes' and n for 'No'");
+    if (numbersPrompt === "yes" || numbersPrompt === "YES") {
         gPassword = gPassword + pNumbers;
     } else {
         gPassword = gPassword;
     }
-    var lengthPrompt = window.prompt("How long would you like the password? Please enter a number length. Preferably 8 or more!");
+    var lengthPrompt = window.prompt("How long would you like the password? Please enter a number length. 8 or more!");
     if (lengthPrompt >= 8) {
         passwordLength = lengthPrompt
     } else {
@@ -106,8 +107,7 @@ var finalPassword =""
         var randomnum = Math.floor(Math.random()*gPassword.length);
         finalPassword += gPassword.substring(randomnum,randomnum+1);
         }
-       document.getElementById("password").value = finalPassword ;
-       window.alert("Enjoy Your New Password!")
+       document.getElementById("password").value = finalPassword;
 };
 
 
