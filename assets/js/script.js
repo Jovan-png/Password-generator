@@ -35,7 +35,7 @@ var finalPassword =""
     } else {
         gPassword = gPassword;
     }
-    var numbersPrompt = window.prompt("Would you like the password to contain NUMBERS? Type yes or no);
+    var numbersPrompt = window.prompt("Would you like the password to contain NUMBERS? Type yes or no");
     if (numbersPrompt === "yes" || numbersPrompt === "YES") {
         gPassword = gPassword + pNumbers;
     } else {
