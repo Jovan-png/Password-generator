@@ -63,9 +63,9 @@ var generateBtn = document.querySelector("#generate");
 
 var numberMis = function(){
     var sCasePrompt;
-var uCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lCase = "abcdefghijklmnopqrstuvwxyz";
-var specialChar = "!#$%&'*+-./;:=/";
+var uCase = "ABCDEFGHIJK";
+var lCase = "abcdefghijk";
+var specialChar = "!#$%&'*+-.";
 var pNumbers = "1234567890"
 var passwordLength ="";
 var gPassword ="";
