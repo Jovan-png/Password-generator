@@ -7,9 +7,9 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 var charPrompts = function(){
     var sCasePrompt;
-var uCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var lCase = "abcdefghijklmnopqrstuvwxyz";
-var specialChar = "!#$%&'*+-./;:=/";
+var uCase = "ABCDEFGHIJK";
+var lCase = "abcdefghijk";
+var specialChar = "!#$%&'*+-.";
 var pNumbers = "1234567890"
 var passwordLength ="";
 var gPassword ="";
@@ -70,6 +70,7 @@ var pNumbers = "1234567890"
 var passwordLength ="";
 var gPassword ="";
 var finalPassword =""
+window.alert("Whoops! You need to select 8 or more!")
     var passwordText = document.querySelector("#password");
     var uCasePrompt = window.prompt("Would you like the password to contain UPPERCASE? Type 'yes' or 'no'");
     if (uCasePrompt === "yes" || uCasePrompt === "YES") {
